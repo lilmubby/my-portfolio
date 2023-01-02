@@ -10,7 +10,7 @@ const contactMe = [
     name: `LinkedIn`,
     font: `fa-brands fa-linkedin`,
     link: `https://www.linkedin.com/in/mubarak-yahaya-3548271a5/`,
-    color: `text-blue-800`
+    color: `text-blue-900`
   },
   {
     name: `Twitter`,
@@ -22,7 +22,7 @@ const contactMe = [
     name: `email`,
     font: `fa-solid fa-at`,
     link: `mailto:yahayamubarak447@gmail.com`,
-    color: `text-white`
+    color: `text-black`
   }
 ];
 
@@ -30,7 +30,7 @@ const contactMe = [
 function Contact(props) {
   
   return (
-    <section id="contact" className="flex justify-center gap-5" >
+    <section id="Contact" className="flex justify-center gap-5" >
       {contactMe.map((contactArr, index) => {
         return <a href={contactArr.link} key={index} target="_blank" 
         className="text-3xl " >

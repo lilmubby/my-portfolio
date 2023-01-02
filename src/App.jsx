@@ -8,7 +8,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-dark w-full min-h-screen">
+    <div className="bg-white min-h-screen min-w-full">
       <Header />
       <Main />
       <Footer /> 

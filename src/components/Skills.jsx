@@ -1,4 +1,4 @@
-// import tailwind from "../assets/downlod.png"
+import tailwind from "../assets/icon.png"
 const skill = [
   {
     name: `HTML5`,
@@ -6,7 +6,7 @@ const skill = [
   },
   {
     name: `CSS3`,
-    font: `fa-brands fa-css3-alt">`
+    font: `fa-brands fa-css3">`
   },
   // {
   //   name: `Tailwind CSS`,
@@ -32,12 +32,12 @@ const skill = [
 function Skills(props) {
   
   return (
-    <section id="skills" className="text-center p-4">
+    <section id="Skills" className="text-center p-4">
     <p className="text-2xl">Language(s) I speak:</p>
       {skill.map((x, index) =>{
-        return <i className={`${x.font} text-3xl p-1`} key={index}></i>
+        return <i className={`${x.font} text-3xl p-2.5`} key={index}></i>
       })}
-    {/* <img src={tailwind} alt="tailwind" /> */}
+    <img src={tailwind} alt="tailwind" className="h-8 inline " />
     </section>
   )
 }

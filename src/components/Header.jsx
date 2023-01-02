@@ -6,7 +6,7 @@ import NavBar from './Navbar';
 function Header(props) {
   
   return (
-    <header className='flex justify-around bg-gray-400 py-2'>
+    <header className='flex justify-around bg-gray-200 py-2 sticky top-0 z-30'>
       <a>
         {/* <img src={avatar} alt="avatar" /> */}
         <i className='fa-solid fa-code'></i>
