@@ -5,7 +5,7 @@ import Skills from "./Skills";
 function Main() {
 
   return(
-    <main>
+    <main className="md:grid md:grid-cols-2 " >
       <About />
       <Skills />
       <Projects />

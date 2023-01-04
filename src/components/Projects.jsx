@@ -34,14 +34,20 @@ const projects = [
 
 function Projects(props) {
   return (
-    <section id="project" className="py-4 grid gap-5">
+    <section id="project" className="py-6 grid gap-3 justify-center 
+    sm:grid-cols-2 md:row-span-2 sm:gap-0 sm:gap-y-4 md:px-4 md:gap-x-4">
       {projects.map((project, index) => {
         return (
           <div key={index} className="relative" >
-            <img src={project.src} alt={project.name} className=" h-48 w-4/6 z-20 block m-auto rounded-xl" />
-            <div className="absolute bg-gray-50 hidden inset-0 z-0 h-48 w-4/6 m-auto rounded-xl text-center pt-20">
+            <img src={project.src} alt={project.name} 
+            className="h-40 w-60 z-20 block rounded-xl sm:m-auto
+            " />
+            <div className="absolute bg-gray-50 hidden inset-0 z-0 h-48 
+            w-4/6 m-auto rounded-xl text-center pt-20">
               <h3>{project.name}</h3>
-              <a href={project.github} target="_blank" className="" >Github |</a>
+              <a href={project.github} target="_blank" className="" >
+                Github |
+              </a>
               <a href={project.live} target="_blank"> Live</a>
             </div>
           </div>

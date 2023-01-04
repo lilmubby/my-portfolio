@@ -23,6 +23,12 @@ const contactMe = [
     font: `fa-solid fa-at`,
     link: `mailto:yahayamubarak447@gmail.com`,
     color: `text-black`
+  },
+  {
+    name: `resume`,
+    font: `fa-solid fa-file`,
+    link: `https://docs.google.com/document/d/166b_YbSP42xVYQ9efzerKWfhbKNaF5-tmbIpHpK88Q0/`,
+    color: `text-black`
   }
 ];
 
@@ -30,10 +36,10 @@ const contactMe = [
 function Contact(props) {
   
   return (
-    <section id="Contact" className="flex justify-center gap-5" >
+    <section id="Contact" className="flex justify-center gap-3.5 md:justify-start" >
       {contactMe.map((contactArr, index) => {
         return <a href={contactArr.link} key={index} target="_blank" 
-        className="text-3xl " >
+        className="text-xl " >
           <i className={`${contactArr.font} ${contactArr.color}`}></i>
         </a>
       })}
