@@ -1,19 +1,29 @@
+import { useState } from 'react';
 import NavBar from './Navbar';
 // import avatar from "../assets/avatar.jpg"
+import menu from "../assets/icon-menu.svg"
 
 
 
 function Header(props) {
-  
+  const [click, setClick] = useState(false);
+
+  function clickHandler() {
+    setClick((prev) => !prev);
+    console.log(click)
+  }
   return (
-    <header className='flex justify-between bg-gray-200 py-2 sticky top-0 z-30 px-5'>
+    <header className='flex justify-between bg-gray-700 py-2 sticky top-0 z-30 px-10'>
       <a>
         {/* <img src={avatar} alt="avatar" /> */}
         <i className='fa-solid fa-code text-red-500'></i>
-        <span> DevMubby </span>
+        <span className='font-bold' > DevMubby </span>
         <i className='fa-solid fa-code text-blue-700'></i>
       </a>
-      <NavBar />
+      <NavBar clicked={click} />
+      <button onClick={clickHandler} className='md:hidden' >
+        <img src={menu} alt='menu' className='' />
+      </button>
     </header>
   )
 }

@@ -5,12 +5,12 @@ function About() {
   return (
     <section id="About" className=" md:px-6 text-center " >
       <h1 className="text-center text-2xl text-ash py-4 font-bold 
-      md:text-left ">
-        Hi, I'm <span className="md:block sm:text-black" >Mubarak Yahaya.</span>
+      md:text-left">
+        Hi, I'm <span className="md:block text-black" >Mubarak Yahaya.</span>
       </h1>
       
-      <p className="w-5/6 m-auto text-gray-900 
-      font-normal text-base leading-tight sm:text-sm sm:text-sm md:w-full
+      <p className="w-4/5 m-auto text-gray-900 
+      font-normal text-sm sm:text-sm sm:text-sm md:w-full
       md:text-left md:leading-5">
         I'm a self-taught
         <span className="text-red-500 font-bold" > frontend developer</span> with over 
