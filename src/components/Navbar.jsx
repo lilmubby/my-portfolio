@@ -1,7 +1,8 @@
 function Navbar(props) {
 
   const links = ['Home', 'Skills', 'Projects', 'Contact'];
-  const mobile = `absolute top-10 right-0 bg-gray-100  w-2/5 `;
+  const mobile = `absolute top-10 right-0 bg-gray-100
+    w-2/5 `;
   const desktop = ` md:flex md:gap-2`;
   const always = `md:relative md:top-0 md:flex md:gap-2 md:bg-transparent`;
 
