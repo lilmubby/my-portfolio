@@ -17,7 +17,7 @@ function Header(props) {
       <a>
         {/* <img src={avatar} alt="avatar" /> */}
         <i className='fa-solid fa-code text-red-500'></i>
-        <span className='font-bold' > DevMubby </span>
+        <span className='font-bold' > Mubby.js </span>
         <i className='fa-solid fa-code text-blue-700'></i>
       </a>
       <NavBar clicked={click} />
